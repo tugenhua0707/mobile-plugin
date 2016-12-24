@@ -17,7 +17,7 @@ gulp.task('common-js', ['clean'], function() {
             .pipe(gulp.dest(rootBuild + '/client/common'));
 });
 gulp.task('components-js', ['clean'], function() {
-  return gulp.src(['components/*.js'])
+  return gulp.src(['components/refresh-loadMore.js'])
             .pipe(gulp.dest(rootBuild + '/client/components'));
 });
 gulp.task('common-img', ['clean'], function() {
