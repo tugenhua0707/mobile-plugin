@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+        <meta content="yes" name="apple-mobile-web-app-capable">
+        <meta content="black" name="apple-mobile-web-app-status-bar-style">
+        <meta content="telephone=no" name="format-detection">
+        <meta content="email=no" name="format-detection">
+        <title>标题</title>
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="stylesheet", type="text/css", href="static/index.css">
+    </head>
+    <body>
+        <div>
+          <p>复制文本</p>
+          <input id='foo' value='http://www.baidu.com '/>
+          <button class='btn' data-clipboard-target='#foo' style="border: 1px solid #333;">复制</button>
+        </div>
+        <div>
+          <p>剪切文本</p>
+          <textarea id='bar'>textarea</textarea>
+          <button class='btn' data-clipboard-action='cut' data-clipboard-target='#bar'>剪切</button>
+        </div>
+        <div>
+          <p>复制属性值</p>
+          <button class='btn' data-clipboard-text='data-text'>复制属性文本</button>
+        </div>
+        
+        <div>
+          <p>动态设置一个目标元素</p>
+          <button class='btn2' data-clipboard-action='cut'>动态设置目标元素</button>
+          <textarea>textarea</textarea>
+        </div>
+
+        <div>
+          <p>动态设置一个文本</p>
+          <button class='btn3' data-text='动态设置文本'>动态设置文本</button>
+        </div>
+        <script src="static/common/react.min.js"></script>
+        <script src="static/common/react-dom.min.js"></script>
+        <script src="static/bundle.js"></script>
+    </body>
+</html>
